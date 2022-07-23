@@ -1,0 +1,186 @@
+/*-------FONT-------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Playfair+Display:ital@0;1&display=swap');
+* {
+  font-family: 'Montserrat', sans-serif;}
+
+/*-------HEADER-------*/
+header {
+    height: 4.5rem;
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(240, 248, 255),rgb(209, 226, 241));
+    display:flex;
+    justify-content: space-between;}
+
+.logo {
+    padding: 0.5rem; 
+    margin-left:0.5rem;
+    margin-top:0.5rem;
+    overflow: hidden;}
+.logo img {
+    width:13rem;;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-top:0.5rem;
+    margin-left:7.5rem;
+    color:rgb(54, 57, 60);
+    font-weight:bold;
+    overflow: hidden;}
+
+.navbar {
+    margin-right:0.5rem;}
+.navbar li { 
+    display:inline-block;
+    list-style:none;}
+.navbar li a {
+    padding: 0.5rem; 
+    color: black;
+    font-size:1.1rem;
+    text-decoration: none;}
+.navbar a:hover {
+    background-color: rgb(212, 240, 248);
+    font-weight:bolder;}
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;}
+
+/*-------FOOTER-------*/
+footer {
+    background-image:linear-gradient(rgb(209, 226, 241),rgb(240, 248, 255),rgb(255, 255, 255));
+    height:4rem;
+    display:flex;
+    justify-content: space-between;}
+
+/*-------MAIN-------*/
+
+h1 {
+    text-align:center;
+    font-size:2rem;
+    color:rgb(83, 88, 92);} 
+h1 a {
+    color:rgb(83, 88, 92);
+    text-decoration: none;}
+h2 {
+    text-align:center;
+}
+h2 a {
+    color:rgb(106, 112, 117);
+    text-decoration: none;
+    font-weight:lighter;}
+
+h1 a:hover,h2 a:hover {
+    background-color: rgb(212, 240, 248)}
+
+
+section {
+    display:flex;
+    align-items:center;
+    width:95%;
+    margin:auto;
+    justify-content: center;
+    color: rgb(38, 38, 38);}
+
+.category_sec:nth-child(2n) {
+    background-color: rgb(227, 241, 253);}
+
+.category_sec:nth-child(2n+1) {
+    background-color: rgb(253, 255, 255);}
+
+.display_cover {
+    width: 20rem;}
+
+.book_display {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap: 5rem;
+    text-align: center; }
+
+
+/*-------BOOK MAIN-------*/
+
+.breadcrumb ul {
+    list-style: none;}
+.breadcrumb li {
+    display: inline;
+    font-size: 1.3rem;}
+.breadcrumb li+li:before {
+    padding: 0.7rem;
+    color: black;
+    content: ">";}
+.breadcrumb li a {
+    color: rgb(93, 154, 207);
+    text-decoration: none;}
+.breadcrumb li a:hover {
+    background-color: aliceblue;
+    font-weight:bolder;}
+
+.bookdisplay div {
+    margin: auto;
+    text-align: center;}
+
+.book_pic {
+    width:25rem;
+    margin:auto;}
+.sub_pic {
+    width:5rem;
+    margin:auto;}
+button {
+    font-size:1.5rem;
+}
+
+.bookdisplay ul {
+    list-style: none;}
+
+.bookdisplay {
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    align-items: center;}
+
+.book_information {
+    display:block;
+    margin: auto;}
+.book_information div {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.book_information h3 {
+    font-size:2.5rem;}
+.book_information p {
+    font-size: 1.2rem;
+}
+
+/*-------CONTACT MAIN-------*/
+.contact_sec {
+    display:block;
+    text-align:center;
+    justify-content: center;}
+
+.contact_sec form {
+    background-color: aliceblue;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 60rem;
+    border: 1px solid white;
+}
+
+/*-------MEDIA QUERY-------*/
+@media screen and (max-width: 960px)
+header ul {
+    list-style: none;
+    display: block;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 960px)
+.bookdisplay {
+    display: grid;
+    justify-content: center;
+    margin: 100px;
+    align-items: center;
+    padding: 20px 0px;
+}
+@media screen and (max-width: 960px)
+.contact_sec form {
+    padding: 2 rem;
+    margin: 0 auto;
+}
